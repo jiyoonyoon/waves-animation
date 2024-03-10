@@ -1,0 +1,23 @@
+.gnb {
+  padding-top: 30px;
+  position: fixed;
+  width: 100%;
+
+  &-logo {
+    display: block;
+    width: 120px;
+
+    img {
+      display: block;
+      height: auto;
+      object-fit: cover;
+      width: 100%;
+    }
+  }
+
+  @include responsive(T) {
+    &-logo {
+      width: 140px;
+    }
+  }
+}
