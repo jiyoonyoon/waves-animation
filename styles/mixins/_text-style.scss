@@ -1,0 +1,24 @@
+@mixin text-style-20() {
+  font-size: $font-size-20;
+  letter-spacing: $letter-spacing-20;
+  line-height: $line-height-20;
+}
+
+@mixin text-style-7vw() {
+  font-size: $font-size-7vw;
+  letter-spacing: $letter-spacing-7vw;
+  line-height: $line-height-7vw;
+}
+
+@mixin text-style($size, $color: false) {
+  @if ($size == 20) {
+    @include text-style-20;
+  }
+  @if ($size == 7vw) {
+    @include text-style-7vw;
+  }
+
+  @if (type-of($color) == color) {
+    color: $color;
+  }
+}
