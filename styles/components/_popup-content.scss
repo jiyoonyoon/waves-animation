@@ -1,0 +1,71 @@
+.popup-content {
+  @include no-scrollbar;
+  height: 80vh;
+  max-height: 500px;
+  overflow-y: scroll;
+  overscroll-behavior: contain;
+  padding: 20px 5px 0px 5px;
+
+  &-title {
+    @include text-style(20);
+    -webkit-text-fill-color: $primary;
+    font-family: $font-point;
+    text-align: center;
+  }
+
+  &-item {
+    @include text-style(14);
+    margin-bottom: 8px;
+
+    &:last-child {
+      margin-bottom: 0px;
+    }
+
+    &.warning {
+      color: $red;
+      font-size: 13px;
+    }
+
+    h2 {
+      @include text-style(18);
+      font-size: 16px;
+      font-family: $font-point;
+      -webkit-text-fill-color: $secondary;
+      margin-top: 20px;
+    }
+
+    span {
+      font-family: 'IBM-Medium';
+    }
+
+  }
+
+  @include responsive(T) {
+    @include column-flexbox;
+    max-height: 556px;
+    padding: 20px;
+
+    &-title {
+      -webkit-text-fill-color: $primary;
+      -webkit-text-stroke: 1px $black;
+      -webkit-text-fill-color: $primary;
+      font-size: 2em;
+      text-align: center;
+    }
+
+    &-item {
+      @include text-style(16);
+      margin-bottom: 8px;
+
+      &.warning {
+        @include text-style(14);
+      }
+  
+      h2 {
+        @include text-style(18);
+        margin-top: 30px;
+      }
+  
+    }
+  }
+}
