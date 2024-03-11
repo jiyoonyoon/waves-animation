@@ -15,10 +15,10 @@
 @import './mixins/flexbox';
 @import './mixins/no-scrollbar';
 
-@import './components/popup-content';
-
 @import './layouts/grids';
 @import './layouts/gnb';
 @import './layouts/overlay';
 @import './layouts/popup';
+@import './layouts/main-content';
 
+@import './components/popup-content';
