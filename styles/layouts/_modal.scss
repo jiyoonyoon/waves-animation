@@ -143,6 +143,15 @@
                 transform: scale(1.1);
               }
             }
+
+            img {
+              @include pos-center;
+              height: auto;
+              object-fit: cover;
+              opacity: .2;
+              pointer-events: none;
+              width: 120%;
+            }
           }
         }
       }
