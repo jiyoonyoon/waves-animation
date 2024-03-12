@@ -5,7 +5,6 @@
   position: fixed;
   top: 0;
   transition: opacity 300ms ease-in-out, visibility 300ms ease-in-out;
-  transition-delay: 300ms;
   visibility: hidden;
   width: 100%;
   z-index: $popup-level;
@@ -13,10 +12,6 @@
   &.is-open {
     opacity: 1;
     visibility: visible;
-  }
-
-  input#chk-modal {
-    display: none;
   }
 
   &-wrapper {
